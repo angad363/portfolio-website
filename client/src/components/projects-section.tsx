@@ -19,7 +19,7 @@ export default function ProjectsSection() {
       tech: ["Next.js", "TypeScript", "PostgreSQL", "Plaid API", "Stripe"],
       color: "purple-primary",
       github: "https://github.com/angad363/fintrack",
-      demo: "https://fintrack.vercel.app"
+      demo: "https:/https://fintrack-gamma.vercel.app/"
     },
     {
       title: "Companion.ai",
@@ -36,7 +36,7 @@ export default function ProjectsSection() {
     <section id="projects" className="py-20 relative">
       <div className="container mx-auto px-6">
         <div className="max-w-6xl mx-auto">
-          <motion.h2 
+          <motion.h2
             className="text-4xl md:text-5xl font-bold text-center mb-16"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -45,7 +45,7 @@ export default function ProjectsSection() {
           >
             Featured <span className="bg-gradient-to-r from-electric-blue to-purple-primary bg-clip-text text-transparent">Projects</span>
           </motion.h2>
-          
+
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
@@ -59,10 +59,10 @@ export default function ProjectsSection() {
                 whileHover={{ scale: 1.02, y: -10 }}
               >
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={`${project.title} preview`} 
-                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300" 
+                  <img
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
@@ -71,7 +71,7 @@ export default function ProjectsSection() {
                   <p className="text-light-gray mb-4 leading-relaxed">{project.description}</p>
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.tech.map((tech, i) => (
-                      <motion.span 
+                      <motion.span
                         key={i}
                         className={`px-3 py-1 bg-${project.color}/20 text-${project.color} rounded-full text-sm`}
                         whileHover={{ scale: 1.05 }}
@@ -81,9 +81,9 @@ export default function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <motion.a 
-                      href={project.github} 
-                      target="_blank" 
+                    <motion.a
+                      href={project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className={`text-${project.color} hover:text-white transition-colors`}
                       whileHover={{ scale: 1.1 }}
@@ -91,9 +91,9 @@ export default function ProjectsSection() {
                     >
                       <Github size={20} />
                     </motion.a>
-                    <motion.a 
-                      href={project.demo} 
-                      target="_blank" 
+                    <motion.a
+                      href={project.demo}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className={`text-${project.color} hover:text-white transition-colors`}
                       whileHover={{ scale: 1.1 }}
@@ -107,7 +107,7 @@ export default function ProjectsSection() {
             ))}
 
             {/* GitHub Card */}
-            <motion.div 
+            <motion.div
               className="group bg-gradient-to-br from-electric-blue/10 to-purple-primary/10 rounded-3xl border border-electric-blue/30 hover:border-electric-blue/60 transition-all duration-300 flex items-center justify-center p-8 text-center"
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -124,9 +124,9 @@ export default function ProjectsSection() {
                 </motion.div>
                 <h3 className="text-xl font-bold mb-2">View More Projects</h3>
                 <p className="text-light-gray mb-4">Explore my complete portfolio on GitHub</p>
-                <motion.a 
-                  href="https://github.com/angad363" 
-                  target="_blank" 
+                <motion.a
+                  href="https://github.com/angad363"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 px-6 py-3 bg-electric-blue/20 text-electric-blue rounded-full hover:bg-electric-blue hover:text-white transition-all duration-300"
                   whileHover={{ scale: 1.05 }}
